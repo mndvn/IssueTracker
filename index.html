@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Tracker.js</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <!-- Container + Form = Main Structure of Front End -->
+    <div class="container">
+        <h1>Issue Follow</h1>    
+        <div class="jumbotron">
+        <h3>Add an Issue</h3>
+        
+        <!-- IssueDescInput -->
+        <form id="issueInputForm">
+            <div class="form-group">
+                <label for="IssueDescInput">Description</label>
+                <input type="text" class="form-control" id="IssueDescInput" placeholder="Describe your thoughts">                    
+            </div>
+
+            <!-- IssueSeverityInput  -->     
+            <div class="form-group">
+                <label for="IssueSeverityInput">Severity</label>
+                <select id="IssueSeverityInput" class="form-control">
+                <option value="Low">Low</option>    
+                <option value="Medium">Medium</option>              
+                <option value="High">High</option>
+                </select>              
+            </div>
+            
+            <!-- Required meta tags --> 
+            <div class="form-group">
+                <label for="IssueDescInput"></label>
+                <input type="text" class="form-control" id="IssueDescInput" placeholder="Describe your thoughts">                    
+            </div>
+        </form>
+        </div>
+    </div>
+    
+    <!-- Java Script Sources / a wide range of variety -->
+    <script src="http://chancejs.com/chance.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+   </body>
+</html>
