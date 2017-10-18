@@ -11,25 +11,26 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
   </head>
-  <body>
 
+ <body onload="fetchIssues();">
+     
     <!-- Container + Form = Main Structure of Front End -->
     <div class="container">
-        <h1>Issue Follow</h1>    
+        <h1 id="head">Issue Tracker</h1>    
         <div class="jumbotron">
         <h3>Add an Issue</h3>
         
         <!-- IssueDescInput -->
         <form id="issueInputForm">
             <div class="form-group">
-                <label for="IssueDescInput">Description</label>
-                <input type="text" class="form-control" id="IssueDescInput" placeholder="Describe your thoughts">                    
+                <label for="issueDescInput">Description</label>
+                <input type="text" class="form-control" id="issueDescInput" placeholder="Describe your thoughts">                    
             </div>
 
             <!-- IssueSeverityInput  -->     
             <div class="form-group">
-                <label for="IssueSeverityInput">Severity</label>
-                <select id="IssueSeverityInput" class="form-control">
+                <label for="issueSeverityInput">Severity</label>
+                <select id="issueSeverityInput" class="form-control">
                 <option value="Low">Low</option>    
                 <option value="Medium">Medium</option>              
                 <option value="High">High</option>
@@ -38,10 +39,22 @@
             
             <!-- Required meta tags --> 
             <div class="form-group">
-                <label for="IssueDescInput"></label>
-                <input type="text" class="form-control" id="IssueDescInput" placeholder="Describe your thoughts">                    
+                <label for="issueAssignedToInput">AssignedTo</label>
+                <input type="text" class="form-control" id="issueAssignedToInput" placeholder="Enter Responsible">                    
             </div>
+            <button type="submit" class="btn btn-primary">Add</button>
         </form>
+        </div>
+
+        <!-- They will be created by user's add -->
+        <div class="col-lg-12">
+            <div id="issuesList">
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>Ömer Mindivanli</p>
         </div>
     </div>
     
